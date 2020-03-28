@@ -59,12 +59,12 @@ p {
     opacity: 0.4;
 }
 
-.showcase h1 {
+#showcase h1 {
     padding-top: 100px;
     padding-bottom: 0;
 }
 
-.showcase .content-wrap {
+#showcase .content-wrap {
     padding: 0 1.5em;
 }
 
@@ -129,7 +129,7 @@ p {
 
 /* Media Queries */
 @media(min-width: 700px) {
-    /* To tesxt is working */
+    /* To test is working */
     /* body{ display: none; }   */
 
     .grid {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Custom Properties Dynamic</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="card" style="--x: 0; --y: 0;">
+        <h1>Testing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus ipsa error, nisi deserunt voluptatibus molestiae eos repellat officia! Inventore ullam temporibus in deserunt illo expedita iure praesentium accusantium at obcaecati a quibusdam delectus molestiae dolores laboriosam autem quae eius, veritatis quaerat ipsum hic iste nobis doloremque. Commodi doloribus animi quas nisi, error molestias explicabo labore pariatur ipsa dicta reprehenderit voluptas, omnis ullam dolor rem voluptatem veritatis veniam? Laborum temporibus voluptatum quis libero a esse ratione, consectetur aliquid! Labore et harum amet esse doloremque rem. Eaque voluptates in fuga deleniti nesciunt facilis ducimus perspiciatis ipsam accusantium nulla iste, facere eligendi!</p>
+    </div>
+
+    <script>
+        document.querySelector('body').onclick = (e) => {
+
+            e.target.style.setProperty('--x', `${ e.pageX }px`)
+            e.target.style.setProperty('--y', `${ e.pageY }px`)
+        }
+
+        document.querySelector('.card').onmousemove = (e) => {
+            // console.log(e);
+
+            const x = e.pageX - e.target.offsetLeft;
+            const y = e.pageY - e.target.offsetTop;
+
+            e.target.style.setProperty('--x', `${ x }px`)
+            e.target.style.setProperty('--y', `${ y }px`)
+        }
+    </script>
+</body>
+</html>
