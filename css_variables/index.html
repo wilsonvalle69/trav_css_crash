@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Variables</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="box">
+                <h1>Hello Perth</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique dolorum corporis facilis vero excepturi, libero, laudantium quod odio vitae omnis, fugiat eaque reprehenderit. Laborum assumenda impedit nihil officiis, ad quae? Odit asperiores temporibus dolore illo quae, assumenda ex, quas unde voluptatibus autem natus ratione, quis amet nemo? Laudantium, quae.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Hello Melbourne</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique dolorum corporis facilis vero excepturi, libero, laudantium quod odio vitae omnis, fugiat eaque reprehenderit. Laborum assumenda impedit nihil officiis, ad quae? Odit asperiores temporibus dolore illo quae, assumenda ex, quas unde voluptatibus autem natus ratione, quis amet nemo? Laudantium, quae.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <a href="" id="btn1">
+                Change background color
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const box = document.querySelector('.box');
+        const boxStyles = getComputedStyle(box);
+        // console.log(boxStyles);
+        const boxMainColor = boxStyles.getPropertyValue('--box-main-color');
+        console.log('boxMainColor:', boxMainColor);
+        
+        const header = document.querySelector('#main-header');
+        const headerStyles = getComputedStyle(header);
+        console.log(headerStyles);
+        const headerBgColor = headerStyles.getPropertyValue('--header-bg-color');
+        console.log('headerBgColor:', headerBgColor);
+
+
+        document.querySelector('#btn1').onclick = (e) => {
+            e.preventDefault();;
+            console.log('click on btn1');
+            const body = document.querySelector('body');
+            body.style.setProperty('--main-bg-color', boxMainColor );
+        }
+        
+    </script>
+</body>
+</html>
