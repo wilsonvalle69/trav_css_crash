@@ -16,3 +16,9 @@ Add VS Code Live Sass Compiler
 
 On body clcik expand a red box
 On the Blus box onmousemove it light the mouse position
+
+
+2020/03/29
+css_landing_page
+https://www.youtube.com/watch?v=HZv8YHYUHTU&t=1s
+
