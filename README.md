@@ -22,3 +22,10 @@ On the Blus box onmousemove it light the mouse position
 css_landing_page
 https://www.youtube.com/watch?v=HZv8YHYUHTU&t=1s
 
+
+
+2020/03/30
+parallax
+https://www.youtube.com/watch?v=JttTcnidSdQ
+
+
