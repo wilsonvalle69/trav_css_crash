@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pluralsight - Flexbox and CSS Grid</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>display: flex</h2>
+    <div class="flex-container">
+      <div class="flex-item" id="container-1">Flex Item 01</div>
+      <div class="flex-item" id="container-2">Flex Item 02</div>
+      <div class="flex-item" id="container-3">Flex Item 03</div>
+    </div>
+
+    <h2>display: inline-flex</h2>
+    <div class="flex-container-2">
+      <div class="flex-item" id="container-1">Flex Item 01</div>
+      <div class="flex-item" id="container-2">Flex Item 02</div>
+      <div class="flex-item" id="container-3">Flex Item 03</div>
+    </div>
+
+    <h2>display: inline-flex / flexdirection: row-reverse</h2>
+    <div class="flex-container-3">
+      <div class="flex-item" id="container-1">Flex Item 01</div>
+      <div class="flex-item" id="container-2">Flex Item 02</div>
+      <div class="flex-item" id="container-3">Flex Item 03</div>
+    </div>
+
+    <h2>display: inline-flex / flex-direction: column</h2>
+    <div class="flex-container-4">
+      <div class="flex-item" id="container-1">Flex Item 01</div>
+      <div class="flex-item" id="container-2">Flex Item 02</div>
+      <div class="flex-item" id="container-3">Flex Item 03</div>
+    </div>
+
+    <h2>display: inline-flex / flex-direction: column-reverse</h2>
+    <div class="flex-container-5">
+      <div class="flex-item" id="container-1">Flex Item 01</div>
+      <div class="flex-item" id="container-2">Flex Item 02</div>
+      <div class="flex-item" id="container-3">Flex Item 03</div>
+    </div>
+    <hr />
+    <h2>6 display: flex / flex-wrap: nowrap</h2>
+    <div class="flex-container-6">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+    <hr />
+    <h2>7 display: flex / flex-wrap: wrap</h2>
+    <div class="flex-container-7">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+    <hr />
+    <h2>8 display: flex / flex-wrap: wrap-reverse</h2>
+    <div class="flex-container-8">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+    <hr />
+    <h2>9 display: flex / flex-wrap: wrap / flex-direction: column</h2>
+    <div class="flex-container-9">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+    <hr />
+    <h2>10 display: flex / flex-wrap: wrap / flex-direction: column-reverse</h2>
+    <div class="flex-container-10">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+    <hr />
+    <h2>11 display: flex / flex-flow: column wrap (same as 9)</h2>
+    <div class="flex-container-11">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+
+    <hr />
+    <h2>12 display: flex / flex-flow: row-reverse wrap-reverse (same as 9)</h2>
+    <div class="flex-container-12">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+    </div>
+
+    <hr />
+    <h1>Alignment</h1>
+
+    <h2>13 justify-content: flex-start</h2>
+    <div class="flex-container-13">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>14 justify-content: flex-end</h2>
+    <div class="flex-container-14">
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>15 justify-content: flex-end / flex-direction: column</h2>
+    <div class="flex-container-15">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>16 justify-content: center / flex-direction: column</h2>
+    <div class="flex-container-16">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>17 justify-content: center</h2>
+    <div class="flex-container-17">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>18 justify-content: space-betwwen</h2>
+    <div class="flex-container-18">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>19 justify-content: space-around</h2>
+    <div class="flex-container-19">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>20 align-items: flex-start</h2>
+    <div class="flex-container-20">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>20 align-items: flex-start</h2>
+    <div class="flex-container-20">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>21 align-items: flex-end</h2>
+    <div class="flex-container-21">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>22 align-items: center</h2>
+    <div class="flex-container-22">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>23 align-items: baseline - (Align base on text)</h2>
+    <div class="flex-container-23">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>24 align-items: flex-start / flex-direction: column</h2>
+    <div class="flex-container-24">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>25 align-items: stretch</h2>
+    <div class="flex-container-25">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>26 align-self: flex-start (02), flex-end (03), stretch (04)</h2>
+    <div class="flex-container-26">
+      <div class="flex-item15 flex-item-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item15 flex-item26-02-self">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item15 flex-item26-03-self">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item15 flex-item26-04-self">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>Align Content</h1>
+    <h2>27 align-content:</h2>
+
+    <div class="flex-container-ac">
+      <div class="flex-item-ac flex-item-ac-01">
+        <em>Flex Item</em>
+        <strong>01</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-02">
+        <em>Flex Item</em>
+        <strong>02</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-03">
+        <em>Flex Item</em>
+        <strong>03</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-04">
+        <em>Flex Item</em>
+        <strong>04</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-05">
+        <em>Flex Item</em>
+        <strong>05</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-06">
+        <em>Flex Item</em>
+        <strong>06</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-07">
+        <em>Flex Item</em>
+        <strong>07</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-08">
+        <em>Flex Item</em>
+        <strong>08</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-09">
+        <em>Flex Item</em>
+        <strong>09</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-10">
+        <em>Flex Item</em>
+        <strong>10</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-11">
+        <em>Flex Item</em>
+        <strong>11</strong>
+      </div>
+
+      <div class="flex-item-ac flex-item-ac-12">
+        <em>Flex Item</em>
+        <strong>12</strong>
+      </div>
+    </div>
+  </body>
+</html>

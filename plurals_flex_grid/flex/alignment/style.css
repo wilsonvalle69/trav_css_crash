@@ -1,0 +1,372 @@
+:root {
+  --backgroud-primary-color: #a62e5c;
+  --backgroud-secondary-color: #9bc850;
+  --backgroud-third-color: #675ba7;
+  --border-color: #000;
+  --font-color: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  border: solid 4px #000;
+  margin-bottom: 10px;
+}
+
+.flex-item {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+  opacity: 0.8;
+  width: 5em;
+  /* display: block; */
+}
+
+.flex-item strong {
+  display: block;
+  font-size: 130%;
+}
+
+.flex-item:first-child {
+  background-color: #a62e5c;
+}
+
+.flex-item:nth-child(2) {
+  background-color: #9bc850;
+}
+
+.flex-item:nth-child(3) {
+  background-color: #675ba7;
+}
+
+.flex-item:nth-child(4) {
+  background-color: #2a9fbc;
+}
+
+.flex-item:nth-child(5) {
+  background-color: #f15b2a;
+}
+
+.flex-item:nth-child(6) {
+  background-color: #9bc850;
+}
+
+.flex-item:nth-child(7) {
+  background-color: #a62e5c;
+}
+
+.flex-item:nth-child(8) {
+  background-color: #2a9fbc;
+}
+
+.flex-container-2 {
+  display: inline-flex;
+  border: solid 4px var(--border-color);
+  margin-bottom: 10px;
+}
+
+.flex-container-3 {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  border: solid 4px var(--border-color);
+  margin-bottom: 10px;
+}
+
+.flex-container-4 {
+  display: inline-flex;
+  flex-direction: column;
+  border: solid 4px var(--border-color);
+  margin-bottom: 10px;
+}
+
+.flex-container-5 {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  border: solid 4px var(--border-color);
+  margin-bottom: 10px;
+}
+
+/*******  display: flex / flex-wrap: nowrap *******/
+.flex-container-6 {
+  display: flex;
+  flex-wrap: nowrap;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-item strong {
+  display: block;
+  font-size: 130%;
+}
+
+.flex-container-7 {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-8 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-9 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-10 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-11 {
+  display: flex;
+  flex-flow: column wrap;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-12 {
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  border: solid 4px #000;
+  width: 20%;
+  height: 30em;
+}
+
+.flex-container-13 {
+  display: flex;
+  border: solid 4px #000;
+  height: 30em;
+  justify-content: first flex-start;
+}
+
+.flex-container-14 {
+  display: flex;
+  border: solid 4px #000;
+  height: 30em;
+  justify-content: flex-end;
+}
+
+/******/
+.flex-container-15 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.flex-item15 {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.flex-item-01 {
+  background-color: #a62e5c;
+}
+
+.flex-item-02 {
+  background-color: #9bc850;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.flex-item-03 {
+  background-color: #675ba7;
+  padding: 4em 3em;
+}
+
+.flex-item-04 {
+  background-color: #2a9fbc;
+  padding: 3em 2em;
+}
+
+.flex-container-16 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container-17 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  justify-content: center;
+}
+
+.flex-container-18 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  justify-content: space-between;
+}
+
+.flex-container-19 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.flex-container-20 {
+  display: flex;
+  border: solid 4px #000;
+  height: 20em;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.flex-container-21 {
+  display: flex;
+  border: solid 4px #000;
+  height: 20em;
+  width: 50%;
+  align-items: flex-end;
+}
+
+.flex-container-22 {
+  display: flex;
+  border: solid 4px #000;
+  height: 20em;
+  width: 50%;
+  align-items: center;
+}
+
+.flex-container-23 {
+  display: flex;
+  border: solid 4px #000;
+  height: 20em;
+  width: 50%;
+  align-items: baseline;
+}
+
+.flex-container-24 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  width: 50%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex-container-25 {
+  display: flex;
+  border: solid 4px #000;
+  height: 36em;
+  width: 50%;
+  align-items: stretch;
+}
+
+.flex-container-26 {
+  display: flex;
+  border: solid 4px #000;
+  height: 30em;
+  width: 50%;
+  align-items: center;
+}
+
+.flex-item26-02-self {
+  background-color: #9bc850;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  align-self: flex-start;
+}
+
+.flex-item26-03-self {
+  background-color: #675ba7;
+  padding: 4em 3em;
+  align-self: flex-end;
+}
+
+.flex-item26-04-self {
+  background-color: #2a9fbc;
+  padding: 3em 2em;
+  align-self: stretch;
+}
+
+/***** Align content *****/
+
+.flex-container-ac {
+  display: flex;
+  border: solid 4px #000;
+  height: 36.72em;
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  /*align-content: flex-end;*/
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: stretch; */ /* default */
+}
+
+.flex-item-ac {
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+  width: 33.33333%;
+}
+
+.flex-item-ac-01,
+.flex-item-ac-11 {
+  background-color: #a62e5c;
+}
+
+.flex-item-ac-02,
+.flex-item-ac-10 {
+  background-color: #9bc850;
+}
+
+.flex-item-ac-03,
+.flex-item-ac-09 {
+  background-color: #675ba7;
+}
+
+.flex-item-ac-04,
+.flex-item-ac-08 {
+  background-color: #2a9fbc;
+}
+
+.flex-item-ac-05,
+.flex-item-ac-12 {
+  background-color: #f15b2a;
+}
+
+.flex-item-ac-06 {
+  background-color: #9bc850;
+}
+
+.flex-item-ac-07 {
+  background-color: #a62e5c;
+}
